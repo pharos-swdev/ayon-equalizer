@@ -20,7 +20,7 @@ class LoadMatchmoveHoudini(load.LoaderPlugin):
     icon = "video"
     color = "white"
 
-    def load(self, context, name, namespace, data):
+    def load(self, context, name, namespace, options):
         host = registered_host()
         if host.name not in {"houdini"}:
             show_message_dialog(
